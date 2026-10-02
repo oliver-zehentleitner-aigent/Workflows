@@ -2,6 +2,7 @@
 
 ## Multi-project isolation without mixing context (Milestone 9)
 
+**Id:** 5660249b-c176-4382-af28-d660f05e5bb3  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** M9 commit `6dfb2a3`; `packages/workspace/`; CLI `--workspace` / `--list-sessions`  

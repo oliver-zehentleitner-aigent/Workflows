@@ -2,9 +2,11 @@
 
 ## CLI contract + thin HTTP, same brain (Milestone 5)
 
+**Id:** ff485e05-0649-4fcd-bf9a-7fcb85c98a43  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** M5 commit `86c49f6`; `packages/orchestrator/src/integration/`; CLI `--workspace`, pure `--json`  
+**See:** workspace.md#multi-project-isolation-without-mixing-context-milestone-9 — 5660249b-c176-4382-af28-d660f05e5bb3 — as of 2026-10-02
 
 Other projects call Workflows through a **documented CLI contract** and optional **thin HTTP** (`GET /health`, `GET /v1/status`, `POST /v1/chat`, `GET /v1/events`, `GET /v1/session`). Tools bind to the caller’s workspace; orchestration logic stays inside the orchestrator package (not a second brain in the HTTP layer). Inventory: `packages/orchestrator/src/integration/surface-contract.md`.
 

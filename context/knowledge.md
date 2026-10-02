@@ -2,7 +2,9 @@
 
 ## Vision: first-principles world model over plain facts
 
-**Status:** active (direction)  
+**Id:** 602caeb0-33ab-42ea-ad94-69566a644237  
+**Status:** active  
+**Status note:** direction  
 **Evidence:** confirmed  
 **Source:** design conversation 2026-08-02 (first-principles graphs + voice use); M11–M18 shells delivered through `6f11d1f`  
 **Revisit when:** daily use shows representation or approval-loop gaps
@@ -46,8 +48,10 @@ work and “what is the status of actuator-v2?” need that structure. Those are
 
 ## Core objects (M11 minimum)
 
+**Id:** d2f84d05-33dc-45f1-af38-ef421d0e1aab  
 **Status:** active  
-**Evidence:** confirmed (implemented shell in `packages/knowledge`)  
+**Evidence:** confirmed  
+**Evidence note:** implemented shell in `packages/knowledge`  
 
 | Object | Role |
 |--------|------|
@@ -74,8 +78,10 @@ Invariants that must survive any implementation:
 
 ## Extraction loop (not direct write)
 
+**Id:** 302092c6-0df3-46c3-91bf-39ea19039eb2  
 **Status:** active  
-**Evidence:** confirmed (design constraint)
+**Evidence:** confirmed
+**Evidence note:** design constraint
 
 ```
 Raw activity (chat / markdown / project)
@@ -92,6 +98,7 @@ output is the right engine for the extraction step.
 
 ## Relation to existing memory
 
+**Id:** 13474b90-18d1-414b-a3cd-39c1d5b55a66  
 **Status:** active  
 **Evidence:** confirmed
 
@@ -119,7 +126,9 @@ for “user prefers X”. Knowledge is for *structure of understanding*.
 
 ## Voice / natural-language use (intent)
 
-**Status:** active (product intent; M18 shell delivered optional)  
+**Id:** e51c33cf-3f68-475e-b100-4efd6b8977ed  
+**Status:** active  
+**Status note:** product intent; M18 shell delivered optional  
 **Evidence:** confirmed  
 **Source:** M18 `@workflows/voice`  
 
@@ -129,7 +138,10 @@ See decision log below and [interface.md](interface.md).
 
 ## Storage choice for first shell
 
-**Status:** superseded by Knowledge Infrastructure v2 (2026-08)
+**Id:** 2aec680f-f5c3-4e36-9e24-2b05b8227d7b
+**Status:** superseded
+**Status note:** by Knowledge Infrastructure v2 (2026-08)
+**Superseded by:** f672a25d-a78e-4ee8-867a-30858f816b46
 **Evidence:** confirmed  
 **Source:** M11 AGENTS + delivery  
 
@@ -141,6 +153,7 @@ SQLite tables alongside existing DBs. No new infrastructure required for M11–M
 
 ## Knowledge Infrastructure v2 storage boundaries
 
+**Id:** f672a25d-a78e-4ee8-867a-30858f816b46
 **Status:** active
 **Evidence:** confirmed
 **Source:** PR #32 implementation specification; foundational contracts and migration `0001_canonical_postgis.sql`
@@ -397,7 +410,9 @@ knowledge event's source experience IDs before proposals are created.
 
 ## Knowledge milestone roadmap (M11–M18)
 
-**Status:** active (shell track complete; deepen with use)  
+**Id:** 742d4b8c-29e1-40bf-9a40-3672a037ae0a  
+**Status:** active  
+**Status note:** shell track complete; deepen with use  
 **Evidence:** confirmed  
 **Source:** design conversation 2026-08-02; delivery commits through M18 `6f11d1f`  
 **Revisit when:** daily use shows a shell is too thin, or a band needs hardening before the next
@@ -423,7 +438,10 @@ knowledge event's source experience IDs before proposals are created.
 
 ## Interaction mode + continuous knowledge capture (post-M18)
 
-**Status:** superseded for default write path (conversation extract is opt-in via `KNOWLEDGE_CAPTURE_ENABLED`; ingest jobs are the storage path)  
+**Id:** caf65573-564a-4112-833c-87af4fd671e9  
+**Status:** superseded  
+**Status note:** for default write path (conversation extract is opt-in via `KNOWLEDGE_CAPTURE_ENABLED`; ingest jobs are the storage path); the replacement is "System-owned ingest is the primary write path" under "Decisions delivered with M11–M18 shells"  
+**Superseded by:** 2f0b18bb-9a38-49ba-802f-cdd92b7f4ab2  
 **Evidence:** confirmed  
 **Source:** design [`docs/INTERACTION_MODE_AND_KNOWLEDGE_CAPTURE.md`](../docs/INTERACTION_MODE_AND_KNOWLEDGE_CAPTURE.md); structured capture [`docs/STRUCTURED_CAPTURE_AND_NETWORK_VIZ.md`](../docs/STRUCTURED_CAPTURE_AND_NETWORK_VIZ.md); foundation `04415a5`; iteration `7d474bb`  
 **Revisit when:** daily multi-hour sessions show extract quality, queue noise, or sparring tone still wrong
@@ -487,6 +505,7 @@ Default min interval between auto captures (`KNOWLEDGE_CAPTURE_MIN_INTERVAL_MS`,
 
 ## Decisions delivered with M11–M18 shells
 
+**Id:** 2f0b18bb-9a38-49ba-802f-cdd92b7f4ab2  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** milestone AGENTS specs + implementation sessions 2026-08-02–03; commits `430ce65`…`6f11d1f` (knowledge track)  
@@ -644,6 +663,7 @@ Compact pointers to what exists in code (detail lives in AGENTS-M* specs):
 
 ## Accepted graph explore after M17
 
+**Id:** 5e5eaa53-a7c8-49ac-914d-67c08333c83b
 **Status:** active
 **Evidence:** confirmed
 **Source:** [`docs/KNOWLEDGE_EXPLORE_UI.md`](../docs/KNOWLEDGE_EXPLORE_UI.md); [`docs/STRUCTURED_CAPTURE_AND_NETWORK_VIZ.md`](../docs/STRUCTURED_CAPTURE_AND_NETWORK_VIZ.md); `packages/orchestrator/src/ui/web/`

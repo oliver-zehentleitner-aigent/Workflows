@@ -2,6 +2,7 @@
 
 ## Local JSONL events, not SaaS (Milestone 8)
 
+**Id:** 205def52-1c76-4e26-b2fa-d2898ecaed54  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** M8 commit `fe3dfee`; `packages/observability/`; logs under gitignored `data/logs/`  

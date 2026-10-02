@@ -2,10 +2,12 @@
 
 ## Minimal SQLite session history without embeddings (Milestone 0)
 
+**Id:** 10efcb01-920a-4631-8c26-87d4fb5c69c4  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** `packages/memory/`; early M0  
 **Revisit when:** multi-device sync is required
+**See:** workspace.md#multi-project-isolation-without-mixing-context-milestone-9 — 5660249b-c176-4382-af28-d660f05e5bb3 — as of 2026-10-02
 
 Short-term conversation memory is SQLite (`better-sqlite3`) keyed by `sessionId`. Continuity across restart and model switch was the M0 goal. System prompts are not auto-persisted—only explicit user/assistant turns.
 
@@ -21,6 +23,7 @@ From **M9**, effective session ids are **namespaced per workspace** (`ws:<id>:<l
 
 ## Durable experience spine (Continuous Cognition WP1)
 
+**Id:** ee9cda84-2608-4510-8f48-f685e66483a4
 **Status:** active
 **Evidence:** confirmed
 **Source:** PR #33 WP1 contract; `packages/memory/src/types.ts`; `packages/memory/src/store.ts`
@@ -72,6 +75,7 @@ boundary.
 
 ## Session interaction state (post-M18 capture)
 
+**Id:** 3d71f9eb-d011-43e7-8698-75176eb17493  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** foundation `04415a5`; table `session_state` in short-term memory DB  
@@ -87,9 +91,11 @@ See [knowledge.md](knowledge.md) (continuous capture) and [interface.md](interfa
 
 ## Long-term memory API (Milestone 3A)
 
+**Id:** eda59e7f-2b49-47a9-bb00-9df79c03ad9f  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** `packages/memory/src/longterm/`; commit `3ae023d`  
+**See:** workspace.md#multi-project-isolation-without-mixing-context-milestone-9 — 5660249b-c176-4382-af28-d660f05e5bb3 — as of 2026-10-02
 
 Durable facts with `remember` / `recall` / `list` / `forget`, optional keys and tags. Keyword recall first. Storage path is local/gitignored or `PERSONAL_CONTEXT_DIR`.
 
@@ -99,6 +105,7 @@ Durable facts with `remember` / `recall` / `list` / `forget`, optional keys and 
 
 ## Embeddings / semantic memory (Milestone 4)
 
+**Id:** 926dda8a-1f25-493c-ba83-dd7a54c72c04  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** `packages/embeddings/`; commit `7debfab`  

@@ -2,6 +2,7 @@
 
 ## Layer packages under `packages/` (A–F complete)
 
+**Id:** 73731932-e640-4750-9fb7-3768495df26b  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** `docs/PACKAGE_REFACTOR.md` (plan + execution); Step F layout; root `Orchestrator/` removed after  

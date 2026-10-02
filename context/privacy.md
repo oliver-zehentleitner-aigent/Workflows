@@ -2,6 +2,7 @@
 
 ## Personal model stays out of the public repo
 
+**Id:** 43fa43df-425b-4bba-8271-edfea222ff33  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** Milestone 3 discussion; LTM env (`PERSONAL_CONTEXT_DIR`, gitignored DB paths)  
@@ -20,6 +21,7 @@ Long-term memory is exposed as an **API**; storage defaults to local/gitignored 
 
 ## Knowledge and voice privacy (M11–M18)
 
+**Id:** a871fb18-2474-46ba-b18e-0b018fb42a2c  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** knowledge AGENTS privacy notes; M18 `VOICE_ALLOW_REMOTE_AUDIO`  

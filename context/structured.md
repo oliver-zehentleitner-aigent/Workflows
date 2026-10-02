@@ -2,6 +2,7 @@
 
 ## Parseable JSON with repair, not constrained decoding (Milestone 10)
 
+**Id:** 7e7f4a37-06f0-4000-9c86-25e9e8f69f23  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** M10 commit `74cd7f2`; `packages/structured/`; pipeline planner path  

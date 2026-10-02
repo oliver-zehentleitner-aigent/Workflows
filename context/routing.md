@@ -2,10 +2,12 @@
 
 ## Rule-based local vs frontier selection (Milestone 0)
 
+**Id:** fb4c984d-072a-413e-941c-c656d77126c2  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** `ARCHITECTURE.md` (Orchestration); `packages/orchestrator/AGENTS.md` routing rules; `packages/orchestrator/src/router.ts`  
 **Revisit when:** routing becomes model-driven, evaluation scores show systematic mis-routes, or task taxonomy changes
+**See:** policy.md#budget-aware-tiering-over-pure-routing-milestone-7 — 92ea0015-c1df-4080-856a-6f2637bdb80a — as of 2026-10-02
 
 The orchestrator classifies each user prompt into a coarse **task type** (summarize, tool, code, research, reasoning, general) and **complexity** (low / medium / high), then picks **local** or **frontier** with fixed rules:
 

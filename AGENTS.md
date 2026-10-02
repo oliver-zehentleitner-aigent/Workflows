@@ -22,10 +22,5 @@ Treat repository documentation as durable system knowledge, not as a per-change 
 - Do not create a new standalone Markdown plan/spec file for each feature or milestone unless the design is genuinely cross-cutting, long-lived, and does not fit an existing durable home.
 - Historical implementation plans belong in Git/PR history; current repository docs should describe the system as it is intended to remain.
 
-<!-- keep-the-why:config -->
-- context: `context/`
-- init: complete
-- context-schema: 0.6.3
-- capture-confirmation: confirm-when-unsure
-- source-reference: never
-<!-- /keep-the-why:config -->
+Keep the Why's config for this project migrated to .keep-the-why on
+2026-10-02 — requires skill version 0.10.0 or later to read it.

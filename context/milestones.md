@@ -2,6 +2,7 @@
 
 ## Delivery style: shell first, optimize later
 
+**Id:** 29bd2877-030e-471c-80df-5393ac33b73e  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** working session 2026-08-01  
@@ -18,6 +19,7 @@ Milestones are implemented as **working shells**: interfaces, env-gated features
 
 ## Defaults-off for costly or side-effecting paths
 
+**Id:** 1d145989-a4c4-4d9b-8ba4-ff0546514bbe  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** env flags across tools, policy, embeddings, proactive, pipeline; M8 config exception below  
@@ -31,8 +33,10 @@ Most optional brain features start **off** until explicitly enabled (`TOOLS_ENAB
 
 ## Order after M3 (2026-08-01)
 
+**Id:** d9eb1848-cf71-4afd-8f2d-88981a93e946  
 **Status:** active  
 **Evidence:** confirmed  
+**See:** packaging.md#layer-packages-under-packages-af-complete — 73731932-e640-4750-9fb7-3768495df26b — as of 2026-10-02
 
 | # | Focus | Why this order |
 |---|--------|----------------|
@@ -48,7 +52,9 @@ Most optional brain features start **off** until explicitly enabled (`TOOLS_ENAB
 
 ## Knowledge track (M11–M18)
 
-**Status:** active (shell track complete; deepen with use)  
+**Id:** 7059ef5b-bdf2-4461-a206-2ad2b9c100a2  
+**Status:** active  
+**Status note:** shell track complete; deepen with use  
 **Evidence:** confirmed  
 **Source:** design conversation 2026-08-02; delivery through M18 `6f11d1f`; [knowledge.md](knowledge.md)  
 **Revisit when:** daily use shows which shell to harden next; or a cross-cutting invariant (propose→accept, defaults-off) is challenged
@@ -72,9 +78,13 @@ Semantic world model beyond `MemoryFact` text. Same shell-first rule: each row i
 
 ## Implementation status (shells)
 
+**Id:** 46c29847-ebb8-49b8-b4f3-ca1d7e968cc6  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** git through M10 + packaging A–F; knowledge M11–M18 through `6f11d1f`; interaction capture through `7d474bb`  
+**See:** packaging.md#layer-packages-under-packages-af-complete — 73731932-e640-4750-9fb7-3768495df26b — as of 2026-10-02
+**See:** structured.md#parseable-json-with-repair-not-constrained-decoding-milestone-10 — 7e7f4a37-06f0-4000-9c86-25e9e8f69f23 — as of 2026-10-02
+**See:** workspace.md#multi-project-isolation-without-mixing-context-milestone-9 — 5660249b-c176-4382-af28-d660f05e5bb3 — as of 2026-10-02
  
 
 | Range | State |
@@ -100,7 +110,9 @@ Thin spots accepted under shell-first (e.g. heuristic score fusion, static UI, l
 
 ## Next phase: Continuous Cognitive Capture
 
-**Status:** active — next product/system phase  
+**Id:** ca53f8fd-21ef-43f8-81a1-c66c08b54602  
+**Status:** active  
+**Status note:** next product/system phase  
 **Evidence:** confirmed  
 **Source:** design decision 2026-08-09 after Knowledge Infrastructure v2  
 **Revisit when:** sustained real use shows the interaction/capture loop should be decomposed differently
@@ -145,6 +157,7 @@ The phase should build on the current Knowledge Infrastructure v2 boundaries: ca
 
 ## Milestone 3 privacy cut
 
+**Id:** 9f85a3cd-7ebe-40d0-a7e2-fe240b8cbefb  
 **Status:** active  
 **Evidence:** confirmed  
 

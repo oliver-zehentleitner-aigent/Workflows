@@ -2,9 +2,12 @@
 
 ## CLI remains the default automation surface
 
+**Id:** 72b7e8c6-9857-4f53-b26c-e41649a03200  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** M5/M6 specs and README; commit `86c49f6`; run from `packages/orchestrator`  
+**See:** integration.md#cli-contract--thin-http-same-brain-milestone-5 — ff485e05-0649-4fcd-bf9a-7fcb85c98a43 — as of 2026-10-02
+**See:** workspace.md#multi-project-isolation-without-mixing-context-milestone-9 — 5660249b-c176-4382-af28-d660f05e5bb3 — as of 2026-10-02
 
 Scripts, eval, and CI use CLI (`tsx src/index.ts`, pure `--json` stdout, `--workspace`, `--session`, `--list-sessions`). The web UI is optional human shell.
 
@@ -14,6 +17,7 @@ See [integration.md](integration.md) for the external call-in contract and [work
 
 ## Work surface is a separate HTTP client, not a second M6 chat app
 
+**Id:** 5d9e0c6f-6632-4f67-82d8-d6371505927a  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** `packages/surface`; `surface-contract.md` LIVE routes  
@@ -26,6 +30,7 @@ The work surface (`packages/surface`) is a Vite TypeScript client of `http://127
 
 ## Milestone 6 chose simple localhost web over TUI
 
+**Id:** d75e9bb9-8c20-4a14-83c4-16d43c14bd04  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** M6 implementation `b695dd8`; `npm run ui`  
@@ -41,6 +46,7 @@ Primary human shell is a **minimal static web UI** on the same origin as M5 `POS
 
 ## Voice is optional I/O (M18), not a second UI product
 
+**Id:** bb21c53e-b634-4e9c-a577-06d1e95c2bb0  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** M18 shell `6f11d1f`; PR #34; `@workflows/voice`; CLI `--voice-once`, `voice:live`, REPL `/voice`
@@ -58,6 +64,7 @@ Live speech is represented as timestamped audio frames, VAD activity, and provis
 
 ## Interaction mode + proposals as first-class UI
 
+**Id:** a857ed77-4796-41e8-a811-2245d6b417a2  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** design + iteration docs; foundation `04415a5`; UI/queue iteration `7d474bb`  
@@ -87,6 +94,7 @@ Live speech is represented as timestamped audio frames, VAD activity, and provis
 
 ## Accepted knowledge exploration in the reasoning UI
 
+**Id:** cfe04e67-d353-466f-b23b-5bf0b3e093d3
 **Status:** active
 **Evidence:** confirmed
 **Source:** [`docs/KNOWLEDGE_EXPLORE_UI.md`](../docs/KNOWLEDGE_EXPLORE_UI.md); [`docs/STRUCTURED_CAPTURE_AND_NETWORK_VIZ.md`](../docs/STRUCTURED_CAPTURE_AND_NETWORK_VIZ.md); web UI implementation 2026-08-05

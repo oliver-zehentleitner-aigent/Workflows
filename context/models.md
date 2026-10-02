@@ -2,6 +2,7 @@
 
 ## Default local model: `llama3.1:8b`
 
+**Id:** 2b535528-6910-49dd-81e0-f25b89945026  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** maintainer request 2026-08-04; default in `packages/orchestrator/src/orchestrator.ts` and `packages/orchestrator/.env.example`  
@@ -23,6 +24,7 @@ The configured default Ollama model tag is **`llama3.1:8b`**, overridable via `O
 
 ## Local client: Ollama CLI (`ollama run`), not the HTTP API
 
+**Id:** c382b0a9-4ec4-4aa1-a9ed-8331fc3087e9  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** maintainer direction during M0 build; `packages/orchestrator/AGENTS.md`; `packages/models/src/local.ts`  
@@ -41,6 +43,7 @@ Local inference is invoked by spawning the **Ollama CLI**: `ollama run <model> <
 
 ## Frontier: xAI Grok (OpenAI-compatible chat completions)
 
+**Id:** 0ffc09a9-eb44-4b76-851e-a4de2ae7b5dd  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** maintainer direction during M0 build; `packages/models/src/frontier.ts`  

@@ -2,6 +2,7 @@
 
 ## Layered system (intent)
 
+**Id:** 38120beb-1781-4161-9836-54d5abcbbdaa  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** root `ARCHITECTURE.md`; conversation 2026-08-01; knowledge roadmap 2026-08-02; PR #33 WP1–WP5
@@ -22,9 +23,11 @@ Platform shells also present: embeddings, integration surface, compute policy, o
 
 ## Current package shape
 
+**Id:** e3b086bb-de90-45c4-bb93-001666dc3c7c  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** `docs/PACKAGE_REFACTOR.md` Step F; `packages/*` layout  
+**See:** packaging.md#layer-packages-under-packages-af-complete — 73731932-e640-4750-9fb7-3768495df26b — as of 2026-10-02
 
 Feature layers live under **`packages/<layer>`**. Runnable glue is **`packages/orchestrator`** (router, handle, CLI, UI, integration HTTP). See [packaging.md](packaging.md).
 
@@ -41,6 +44,7 @@ See [packaging.md](packaging.md) and [milestones.md](milestones.md).
 
 ## Request path (conceptual)
 
+**Id:** e0f00237-49e2-453f-aad2-709eb3bef508  
 **Status:** active  
 **Evidence:** confirmed  
 **Source:** `packages/orchestrator/src/orchestrator.ts`; PR #33 WP6
@@ -55,6 +59,7 @@ Knowledge path (M12+): tools in the loop; optional neighborhood/project-status i
 
 ## Background cognition
 
+**Id:** c34934db-21d4-4615-8a13-06733b7a9539
 **Status:** active
 **Evidence:** confirmed
 **Source:** PR #33 WP6
@@ -77,6 +82,7 @@ queues, polling all experiences or the whole graph, and an always-on model loop.
 
 ## Continuous Cognition diagnostics and evaluation
 
+**Id:** 3eadec45-1aa7-49e7-b61f-2f166bd81667
 **Status:** active
 **Evidence:** confirmed
 **Source:** PR #33 WP7
